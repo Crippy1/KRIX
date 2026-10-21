@@ -1,0 +1,10 @@
+node_modules/
+.env
+data/db.json
+data/db.json.bak
+data/*.sqlite
+data/*.sqlite-wal
+data/*.sqlite-shm
+uploads/*
+!uploads/.gitkeep
+*.log

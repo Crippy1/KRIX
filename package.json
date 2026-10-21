@@ -1,0 +1,29 @@
+{
+  "name": "herems-plus-hub",
+  "version": "1.2.0",
+  "description": "Herems_Plus Hub — comprehensive full-stack server (Express API + mostly-HTML frontend, SQLite database, auth, CRUD, real-time, security, caching, tests & Docker)",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "node --test tests/server.test.js",
+    "seed": "node -e \"require('./src/db').seed(true); console.log('Database seeded'); require('./src/db').close()\"",
+    "migrate": "node scripts/migrate-to-sqlite.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "better-sqlite3": "11.10.0",
+    "compression": "1.7.4",
+    "cors": "2.8.5",
+    "dotenv": "16.4.5",
+    "express": "4.19.2",
+    "helmet": "7.1.0",
+    "jsonwebtoken": "9.0.2",
+    "multer": "^2.0.1"
+  }
+}
